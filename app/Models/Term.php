@@ -10,7 +10,17 @@ class Term extends Model
 {
     use HasFactory, BelongsToTenant;
 
-    protected $fillable = ['name', 'academic_session_id', 'school_id', 'status', 'start_date', 'end_date', 'tenant_id'];
+    protected $fillable = [
+        'name',
+        'academic_session_id',
+        'school_id',
+        'status',
+        'start_date',
+        'end_date',
+        'tenant_id',
+        'results_released_at',
+        'reset_date'
+    ];
 
     public function academicSession()
     {
