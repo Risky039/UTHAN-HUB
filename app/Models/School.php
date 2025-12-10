@@ -11,7 +11,7 @@ class School extends Model
     use HasFactory, BelongsToTenant;
 
     protected $fillable = [
-        'name', 'address', 'email', 'phone', 'domain', 'logo','tenant_id'
+        'name', 'address', 'email', 'phone', 'domain', 'logo','tenant_id', 'term_fee'
     ];
 
     public function tenant()
